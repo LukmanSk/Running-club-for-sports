@@ -1,0 +1,100 @@
+/*  FONTS
+ font-family: 'Open Sans', sans-serif;
+ font-family: 'Roboto', sans-serif;
+ font-family: 'Oswald', sans-serif;
+ font-family: 'Merriweather', serif;
+ font-family: 'Montserrat', sans-serif;
+ font-family: 'Titillium Web', sans-serif;
+ font-family: 'PT Sans', sans-serif;
+*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+// Services
+
+.services {
+    @media (min-width: 40em) {
+        margin-top: -10rem;
+    }
+    .card-container {
+        margin-top: -5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 2em;
+        padding: 2rem;
+        @media (min-width: 60em) {
+            padding: 2rem 4rem;
+        }
+
+        .card {
+            font-size: 0.8rem;
+            @media (min-width: 40em) {
+                font-size: calc(1vw + 0.3rem);
+            }
+            background: $clr-01;
+            color: white;
+            padding: 2em;
+            position: relative;
+            width: fit-content;
+            $mg-top: 1.875em;
+            h6 {
+                font-size: 1.125em;
+                font-weight: 400;
+                letter-spacing: 2px;
+            }
+            h3 {
+                font-size: 2.125em;
+                line-height: 1.15;
+                margin-top: $mg-top - 1;
+                font-weight: 500;
+            }
+            .custom-btn {
+                font-size: 0.875em;
+                color: white;
+                border-bottom: 1px solid white;
+                padding-bottom: 0.3em;
+                margin-top: $mg-top;
+            }
+        }
+        .card-2 {
+            background: $clr-02;
+        }
+        .card-3 {
+            background: $clr-03;
+        }
+    }
+    .credit {
+        text-align: center;
+        font-size: 1rem;
+        padding-bottom: 3rem;
+        .text-underline {
+            color: #000;
+            font-weight: 300;
+            text-decoration: none;
+            border-bottom: 2px solid $clr-04;
+            transition: ease 0.1s;
+            padding-bottom: 0.3rem;
+            &:hover,
+            :active {
+                border-bottom: 2px solid $clr-01;
+            }
+        }
+    }
+}

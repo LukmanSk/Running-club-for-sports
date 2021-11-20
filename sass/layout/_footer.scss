@@ -1,0 +1,14 @@
+footer {
+    text-align: center;
+    background: $clr-09;
+    color: white;
+    .credit {
+        font-size: 0.8em;
+        padding: 2.5rem;
+        a {
+            color: $clr-06;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@mixin text-content($h1: 9.375em, $h3: 1.875em, $mg-top: 1.25em, $clr: $clr-01) {
+    padding: 2rem;
+    &__text-content {
+        h1 {
+            font-size: $h1;
+            color: $clr;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 3em;
+            line-height: 1.15;
+            font-weight: 400;
+            margin-top: $mg-top - 1;
+        }
+        h3 {
+            font-size: $h3;
+        }
+        .img-credit {
+            font-size: 1em;
+            margin-top: ($mg-top - 1);
+            line-height: 1.8;
+            a {
+                color: $clr-02;
+                text-decoration: none;
+            }
+        }
+        p {
+            line-height: 1.8;
+            font-size: 1.5em;
+            margin-top: $mg-top;
+        }
+        li {
+            font-size: 1.5em;
+            margin-top: $mg-top - 1;
+            list-style: none;
+            margin-left: 3rem;
+            line-height: 1.8;
+            position: relative;
+
+            &::before {
+                left: -3rem;
+                position: absolute;
+                font-family: "Font Awesome\ 5 Free";
+                content: "\f00c";
+                font-weight: 800;
+                color: $clr-02;
+            }
+        }
+    }
+}
+
+@mixin device-fix-300() {
+    @media (min-width: 360px) {
+        font-size: 1rem;
+    }
+}
+
+@mixin grid-text-content() {
+    .text-content {
+        $mg-top: 1.25em;
+        padding: 2rem;
+        h3 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1em;
+            margin-top: $mg-top;
+            line-height: 1.8;
+            a {
+                color: $clr-02;
+                text-decoration: none;
+            }
+        }
+        h5 {
+            font-size: 1.5em;
+            letter-spacing: 2px;
+        }
+        .custom-btn {
+            padding: 0.625em 1.875em;
+            border: 1px solid white;
+            margin-top: $mg-top;
+            color: white;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: calc($mg-top - 0.318);
+        }
+        h3 {
+            font-size: 1.5em;
+            margin-top: $mg-top;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+    }
+}

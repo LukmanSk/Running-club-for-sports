@@ -525,9 +525,9 @@ header nav .social-links i {
 
 @media (min-width: 40em) {
   .our-mission .grid-container {
-    -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    grid-auto-rows: 19rem;
+    -ms-grid-columns: (minmax(22rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-auto-rows: 22rem;
   }
 }
 
@@ -535,7 +535,7 @@ header nav .social-links i {
   .our-mission .grid-container {
     -ms-grid-columns: (minmax(33%, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-    grid-auto-rows: 15rem;
+    grid-auto-rows: 30rem;
   }
 }
 

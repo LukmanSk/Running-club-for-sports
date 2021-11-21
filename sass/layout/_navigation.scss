@@ -7,6 +7,7 @@ header {
             padding: 1rem 5rem;
         }
         padding: 1rem 2rem;
+        position: relative;
 
         .logo {
             img {
@@ -32,5 +33,68 @@ header {
                 padding: 0 0.4rem;
             }
         }
+        .nav-links {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.747);
+            color: white;
+            height: 150vh;
+            @media (min-width: 40em) {
+                width: 30%;
+            }
+            width: 100%;
+            left: -100rem;
+            top: 0;
+            display: flex;
+            justify-content: center;
+
+            z-index: 100;
+            transition: all 0.5s ease;
+            .close {
+                height: fit-content;
+                position: absolute;
+                right: 2.5rem;
+                top: 1.5rem;
+                i {
+                    font-size: 2rem;
+                }
+            }
+            li {
+                list-style: none;
+                margin-top: 5rem;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 200;
+                    letter-spacing: 1.5px;
+                    transition: all 0.5s ease;
+                }
+                &:hover a {
+                    color: $clr-06;
+                }
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.521);
+            color: white;
+            height: 100vh;
+            width: 100%;
+            left: -100rem;
+            top: 0;
+            z-index: 1;
+
+            transition: all 0.5s ease;
+        }
     }
 }
+
+.open {
+    left: 0 !important;
+}
+
+.scroll-lock {
+    overflow: hidden !important;
+}
+// Javascript

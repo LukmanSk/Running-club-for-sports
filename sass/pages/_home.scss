@@ -121,7 +121,7 @@
             background-position: center center;
             background-size: cover;
             font-size: 0.9rem;
-            @include device-fix-300();
+
             @include text-content(3.75em, 1.5em);
             @media (min-width: 40em) {
                 @include text-content(7em);

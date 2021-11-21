@@ -637,14 +637,8 @@ header nav .social-links i {
           justify-content: flex-end;
 }
 
-@media (min-width: 360px) {
-  .info .columns .col-2 {
-    font-size: 1rem;
-  }
-}
-
 .info .columns .col-2__text-content h1 {
-  font-size: 3.75em;
+  font-size: 3.5em;
   color: #604043;
   line-height: 1.2;
 }
@@ -698,6 +692,7 @@ header nav .social-links i {
 @media (min-width: 40em) {
   .info .columns .col-2 {
     padding: 2rem;
+    height: 30em;
   }
   .info .columns .col-2__text-content h1 {
     font-size: 7em;
@@ -742,6 +737,12 @@ header nav .social-links i {
     content: "\f00c";
     font-weight: 800;
     color: #3da9c9;
+  }
+}
+
+@media (min-width: 46em) {
+  .info .columns .col-2 {
+    height: 40em;
   }
 }
 
@@ -792,12 +793,6 @@ header nav .social-links i {
     content: "\f00c";
     font-weight: 800;
     color: #3da9c9;
-  }
-}
-
-@media (min-width: 46em) {
-  .info .columns .col-2 {
-    height: 50rem;
   }
 }
 

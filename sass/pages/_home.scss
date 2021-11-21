@@ -121,18 +121,19 @@
             background-position: center center;
             background-size: cover;
             font-size: 0.9rem;
-            @include device-fix-300();
-            @include text-content(3.75em, 1.5em);
+
+            @include text-content(3.5em, 1.5em);
             @media (min-width: 40em) {
                 @include text-content(7em);
+                height: 30em;
+            }
+            @media (min-width: 46em) {
+                height: 40em;
             }
             @media (min-width: 50em) {
                 @include text-content();
             }
 
-            @media (min-width: 46em) {
-                height: 50rem;
-            }
             font-size: 0.7rem;
             display: flex;
             align-items: flex-end;

@@ -191,22 +191,27 @@ footer .credit a {
   grid-area: item-5;
 }
 
-.img-content {
-  height: 100%;
-  width: 100%;
+.problem-grid .grid-container .item-2 {
+  background: #604043;
+  color: white;
 }
 
-.img-content img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.problem-grid .grid-container .item-5 {
+  background: #3da9c9;
+  color: white;
 }
 
-.text-content {
+.problem-grid .grid-container .item {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.problem-grid .text-content {
   padding: 2rem;
 }
 
-.text-content li {
+.problem-grid .text-content li {
   list-style: none;
   font-size: 1.25rem;
   margin-left: 1.75rem;
@@ -217,7 +222,7 @@ footer .credit a {
   margin-top: 0.5rem;
 }
 
-.text-content li::before {
+.problem-grid .text-content li::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f30b";
@@ -225,7 +230,7 @@ footer .credit a {
   left: -1.75rem;
 }
 
-.text-content .btn {
+.problem-grid .text-content .btn {
   padding: 0.625rem 1.875rem;
   font-size: 1rem;
   text-transform: uppercase;
@@ -237,44 +242,39 @@ footer .credit a {
   color: white;
 }
 
-.text-content h5 {
+.problem-grid .text-content h5 {
   font-size: 1.5rem;
   letter-spacing: 3px;
 }
 
-.text-content h1 {
+.problem-grid .text-content h1 {
   font-size: 3rem;
   margin-top: 1.25rem;
   font-weight: 400;
   line-height: 1.1;
 }
 
-.text-content .img-credit {
+.problem-grid .text-content .img-credit {
   font-size: 1rem;
   margin-top: 1.875rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.text-content .img-credit a {
+.problem-grid .text-content .img-credit a {
   text-decoration: none;
   color: #adcce9;
 }
 
-.item-2 {
-  background: #604043;
-  color: white;
+.img-content {
+  height: 100%;
+  width: 100%;
 }
 
-.item-5 {
-  background: #3da9c9;
-  color: white;
-}
-
-.item {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+.img-content img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 40em) {
@@ -286,6 +286,154 @@ footer .credit a {
 @media (min-width: 60em) {
   .problem-grid .grid-container {
         grid-template-areas: "item-1 item-3 item-4" "item-2 item-3 item-5";
+  }
+}
+
+.our-mission .grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+      grid-template-areas: "item-1" "item-2" "item-3" "item-4";
+}
+
+.our-mission .grid-container .item {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.our-mission .grid-container .item-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: item-1;
+}
+
+.our-mission .grid-container .item-1 img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.our-mission .grid-container .item-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: item-2;
+}
+
+.our-mission .grid-container .item-3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: item-3;
+}
+
+.our-mission .grid-container .item-4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: item-4;
+}
+
+.our-mission .grid-container .item-2 .text-content {
+  padding: 2rem;
+}
+
+.our-mission .grid-container .item-2 .text-content h3 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+.our-mission .grid-container .item-2 .text-content p {
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.our-mission .grid-container .item-2 .text-content p a {
+  color: #478ac9;
+  text-decoration: none;
+}
+
+.our-mission .grid-container .item-3 {
+  background: #ae6f4e;
+}
+
+.our-mission .grid-container .item-3 .text-content {
+  color: white;
+  padding: 2rem;
+}
+
+.our-mission .grid-container .item-3 .text-content h5 {
+  font-size: 1.5rem;
+}
+
+.our-mission .grid-container .item-3 .text-content p {
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8;
+}
+
+.our-mission .grid-container .item-3 .text-content .custom-btn {
+  color: white;
+  border: 2px solid white;
+  padding: 0.625rem 1.875rem;
+  margin-top: 1.25rem;
+}
+
+.our-mission .grid-container .item-4 {
+  background: #3da9c9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-mission .grid-container .item-4 .text-content {
+  padding: 2rem;
+  color: white;
+}
+
+.our-mission .grid-container .item-4 .text-content h5 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.our-mission .grid-container .item-4 .text-content h1 {
+  font-size: 3rem;
+  margin-top: 0.938rem;
+  font-weight: 700;
+}
+
+.our-mission .grid-container .item-4 .text-content h3 {
+  font-size: 1.5rem;
+  margin-top: 2.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 40em) {
+  .our-mission .grid-container {
+        grid-template-areas: "item-1 item-1" "item-2 item-4" "item-3 item-4";
+  }
+  .our-mission .grid-container .item-2 .text-content h3 {
+    font-size: 3.75rem;
+  }
+  .our-mission .grid-container .item-4 {
+    padding: 2rem;
+  }
+  .our-mission .grid-container .item-4 .text-content h1 {
+    font-size: 9.125rem;
+  }
+}
+
+@media (min-width: 60em) {
+  .our-mission .grid-container {
+        grid-template-areas: "item-1 item-2 item-4" "item-1 item-3 item-4";
   }
 }
 
@@ -500,110 +648,6 @@ header nav .overlay {
 .cta .columns .col-2__text-content .content p {
   margin-top: 0.875em;
   line-height: 1.6;
-}
-
-.our-mission .grid-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-auto-rows: 15rem;
-}
-
-@media (min-width: 40em) {
-  .our-mission .grid-container {
-    -ms-grid-columns: (minmax(22rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    grid-auto-rows: 22rem;
-  }
-}
-
-@media (min-width: 60em) {
-  .our-mission .grid-container {
-    -ms-grid-columns: (minmax(33%, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-    grid-auto-rows: 30rem;
-  }
-}
-
-.our-mission .grid-container .item {
-  font-size: 1rem;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.our-mission .grid-container .item .text-content {
-  padding: 2rem;
-}
-
-.our-mission .grid-container .item .text-content h3 {
-  font-size: 1.5em;
-}
-
-.our-mission .grid-container .item .text-content p {
-  font-size: 1em;
-  margin-top: 1.25em;
-  line-height: 1.8;
-}
-
-.our-mission .grid-container .item .text-content p a {
-  color: #3da9c9;
-  text-decoration: none;
-}
-
-.our-mission .grid-container .item .text-content h5 {
-  font-size: 1.5em;
-  letter-spacing: 2px;
-}
-
-.our-mission .grid-container .item .text-content .custom-btn {
-  padding: 0.625em 1.875em;
-  border: 1px solid white;
-  margin-top: 1.25em;
-  color: white;
-}
-
-.our-mission .grid-container .item .text-content h1 {
-  font-size: 3em;
-  margin-top: calc($mg-top - 0.318);
-}
-
-.our-mission .grid-container .item .text-content h3 {
-  font-size: 1.5em;
-  margin-top: 1.25em;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  letter-spacing: 3px;
-}
-
-.our-mission .grid-container .item img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.our-mission .grid-container .item-1 {
-  grid-row: span 2;
-}
-
-.our-mission .grid-container .item-3 {
-  background: #ae6f4e;
-  color: white;
-  grid-row: span 2;
-}
-
-.our-mission .grid-container .item-4 {
-  background: #3da9c9;
-  color: white;
 }
 
 .info .columns .col-2 {

@@ -24,6 +24,72 @@
         .item-5 {
             grid-area: item-5;
         }
+        .item-2 {
+            background: $clr-01;
+            color: white;
+        }
+
+        .item-5 {
+            background: $clr-02;
+            color: white;
+        }
+        .item {
+            display: grid;
+            place-items: center;
+        }
+    }
+    .text-content {
+        padding: 2rem;
+        li {
+            list-style: none;
+            font-size: 1.25rem;
+            margin-left: 1.75rem;
+            line-height: 1.6;
+            font-style: italic;
+            font-weight: 400;
+            position: relative;
+            margin-top: 0.5rem;
+
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f30b";
+                position: absolute;
+                left: -1.75rem;
+            }
+        }
+        .btn {
+            padding: 0.625rem 1.875rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: 2px solid white;
+            display: inline-block;
+            letter-spacing: 2px;
+            margin-top: 1.25rem;
+            color: white;
+        }
+        h5 {
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-top: 1.25rem;
+            font-weight: 400;
+            line-height: 1.1;
+        }
+        .img-credit {
+            font-size: 1rem;
+            margin-top: 1.875rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            a {
+                text-decoration: none;
+                color: $clr-06;
+            }
+        }
     }
 }
 .img-content {
@@ -35,72 +101,7 @@
         object-fit: cover;
     }
 }
-.text-content {
-    padding: 2rem;
-    li {
-        list-style: none;
-        font-size: 1.25rem;
-        margin-left: 1.75rem;
-        line-height: 1.6;
-        font-style: italic;
-        font-weight: 400;
-        position: relative;
-        margin-top: 0.5rem;
 
-        &::before {
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f30b";
-            position: absolute;
-            left: -1.75rem;
-        }
-    }
-    .btn {
-        padding: 0.625rem 1.875rem;
-        font-size: 1rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        border: 2px solid white;
-        display: inline-block;
-        letter-spacing: 2px;
-        margin-top: 1.25rem;
-        color: white;
-    }
-    h5 {
-        font-size: 1.5rem;
-        letter-spacing: 3px;
-    }
-    h1 {
-        font-size: 3rem;
-        margin-top: 1.25rem;
-        font-weight: 400;
-        line-height: 1.1;
-    }
-    .img-credit {
-        font-size: 1rem;
-        margin-top: 1.875rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-
-        a {
-            text-decoration: none;
-            color: $clr-06;
-        }
-    }
-}
-.item-2 {
-    background: $clr-01;
-    color: white;
-}
-
-.item-5 {
-    background: $clr-02;
-    color: white;
-}
-.item {
-    display: grid;
-    place-items: center;
-}
 // problem-grid
 
 @media (min-width: 40em) {
@@ -120,6 +121,147 @@
             grid-template-areas:
                 "item-1 item-3 item-4"
                 "item-2 item-3 item-5";
+        }
+    }
+}
+
+// our-misssion
+// Grid-container our-mission
+
+.our-mission {
+    .grid-container {
+        .item {
+            display: grid;
+            place-items: center;
+        }
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+            "item-1"
+            "item-2"
+            "item-3"
+            "item-4";
+        .item-1 {
+            grid-area: item-1;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .item-2 {
+            grid-area: item-2;
+        }
+        .item-3 {
+            grid-area: item-3;
+        }
+        .item-4 {
+            grid-area: item-4;
+        }
+        .item-2 {
+            .text-content {
+                padding: 2rem;
+                h3 {
+                    font-size: 1.5rem;
+                    line-height: 1.2;
+                    font-family: "Oswald", sans-serif;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1rem;
+                    margin-top: 1.25rem;
+                    font-family: "Montserrat", sans-serif;
+
+                    a {
+                        color: $clr-10;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .item-3 {
+            background: $clr-03;
+            .text-content {
+                color: white;
+                padding: 2rem;
+                h5 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-size: 1rem;
+                    margin-top: 1.25rem;
+                    font-family: "Montserrat", sans-serif;
+                    line-height: 1.8;
+                }
+                .custom-btn {
+                    color: white;
+                    border: 2px solid white;
+                    padding: 0.625rem 1.875rem;
+                    margin-top: 1.25rem;
+                }
+            }
+        }
+        .item-4 {
+            background: $clr-02;
+            display: flex;
+            align-items: center;
+            .text-content {
+                padding: 2rem;
+                color: white;
+                h5 {
+                    font-size: 1.5rem;
+                    letter-spacing: 2px;
+                    font-weight: 700;
+                }
+                h1 {
+                    font-size: 3rem;
+                    margin-top: 0.938rem;
+                    font-weight: 700;
+                }
+                h3 {
+                    font-size: 1.5rem;
+                    margin-top: 2.25rem;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 300;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 40em) {
+    .our-mission {
+        .grid-container {
+            grid-template-areas:
+                "item-1 item-1"
+                "item-2 item-4"
+                "item-3 item-4";
+
+            .item-2 {
+                .text-content {
+                    h3 {
+                        font-size: 3.75rem;
+                    }
+                }
+            }
+            .item-4 {
+                padding: 2rem;
+                .text-content {
+                    h1 {
+                        font-size: 9.125rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 60em) {
+    .our-mission {
+        .grid-container {
+            grid-template-areas:
+                "item-1 item-2 item-4"
+                "item-1 item-3 item-4";
         }
     }
 }
